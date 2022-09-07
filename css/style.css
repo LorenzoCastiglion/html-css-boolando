@@ -5,6 +5,10 @@
     --red: #F50003;
     --green: #238000;
     --black: #1A1A1A;
+    --twitter: #36A1F2;
+    --facebock: #4867AB;
+    --instagram:  rgba(131,58,180,1);
+
 }
 
 *{
@@ -69,16 +73,20 @@ header nav ul li a {
     flex-flow: row wrap;
     padding-left: 30px;
 }
+.cards .card:nth-of-type(3n+2){
+    margin: 0 15px;
+
+}
 
 .card{
-    width: calc(100% / 3);
-    height: 600px;
-    position: relative;
+    width: calc((100% - 30px) / 3);
     cursor: pointer;
+    margin-bottom: 50px;
+
 }
 
 .modelli {
-    width: 90%;
+    width: 100%;
     
 }
 
@@ -105,23 +113,31 @@ h4{
     text-decoration: line-through;
 }
 
+.pos{
+    
+    position: relative;
+}
+
+.sconti{
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+}
+
 .green{
+    
     background-color: var(--green);
     color: white;
-    position: absolute;
     padding: 2px;
-    right: 66.5%;
-    bottom: 20%;
+    margin-left: 2px;
+    
 }
 
 .red{
+    
     background-color: var(--red);
     color: white;
-    position: absolute;
     padding: 2px;
-    right: 88.5%;
-    bottom: 20%;
-
 }
 
 .heart{
@@ -134,7 +150,7 @@ h4{
     font-size: 30px;
     line-height: 30px;
     top: 2%;
-    right: 10%;
+    right: 0;
 }
 
 .heart:hover{
@@ -143,12 +159,12 @@ h4{
 
 
 .hidden{
-    width: 90%;
+    width: 100%;
     display: none;
 }
 
 .card:hover .hidden{
-    display: block;
+    display: inline-block;
 }
 
 .card:hover .modelli{
@@ -195,3 +211,23 @@ a:hover{
     text-decoration: underline;
 }
 
+
+.fa-square-twitter:hover{
+    color: var(--twitter);
+}
+
+.fa-square-facebook:hover{
+    color: var(--facebock);
+}
+
+.fa-square-instagram:hover{
+    color: var(--instagram);
+}
+
+.fa-square-pinterest:hover{
+    color: var(--red);
+}
+
+.fa-square-youtube:hover{
+    color: var(--red);
+}
