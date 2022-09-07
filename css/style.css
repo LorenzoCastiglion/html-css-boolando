@@ -25,7 +25,7 @@
     position: fixed;
     top: 0;
     padding-top: 15px;
-    border-bottom: 2px solid rgba(26, 26, 26, 0.808);
+    box-shadow: 0px 2px 11px -4px #000000;
     z-index: 10;
 }
 
@@ -60,13 +60,14 @@ header nav ul li a {
 /* main start */
 
 .central{
-   
-    margin: 150px auto;
+    
+    margin: 100px auto;
 }
 
 .cards{
     display: flex;
     flex-flow: row wrap;
+    padding-left: 30px;
 }
 
 .card{
@@ -82,6 +83,7 @@ header nav ul li a {
 }
 
 /* tipografia */
+
 
 h2{
     font-size: 12px;
@@ -108,7 +110,7 @@ h4{
     color: white;
     position: absolute;
     padding: 2px;
-    right: 67.5%;
+    right: 66.5%;
     bottom: 20%;
 }
 
@@ -153,9 +155,43 @@ h4{
     display: none;
 }
 
-
-
-
-
 /* footer */
+
+.foot-container{
+    background-color: var(--black);
+    width: 100%;
+    height: 150px;
+    vertical-align: middle;
+    padding: 40px 100px;
+    margin: 0 auto;
+
+}
+
+.flexfoot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+h5{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer nav  ul li a {
+    color: white;
+    padding-inline-end: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.fa-brands{
+    font-size: 18px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
 
