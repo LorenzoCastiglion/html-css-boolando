@@ -31,6 +31,7 @@
     padding-top: 15px;
     box-shadow: 0px 2px 11px -4px #000000;
     z-index: 10;
+   
 }
 
 .container {
@@ -39,24 +40,32 @@
 }
 
 .logo{
-    width: 100px;
+   width: 100px;
+    
+    
 }
 
-header nav ul li a {
+/* .categorie .top-right{
+    flex-basis: 25%;
+} */
+
+ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     text-decoration: none;
-    /* min-width: 800px; */
-    padding-inline-end: 10px;
+    min-width: 800px;
+    padding-left: 10px;
     text-decoration: none;
+    text-align: right;
 }
 
 .flexnav{
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
+    
 }
 
 /* header end */
@@ -70,8 +79,9 @@ header nav ul li a {
 
 .cards{
     display: flex;
+    justify-content: space-around;
     flex-flow: row wrap;
-    padding-left: 30px;
+    
 }
 .cards .card:nth-of-type(3n+2){
     margin: 0 15px;
@@ -90,7 +100,7 @@ header nav ul li a {
     
 }
 
-/* tipografia */
+/* tipografia  e etichette prodotti*/
 
 
 h2{
@@ -171,6 +181,8 @@ h4{
     display: none;
 }
 
+/* main, etichette e immagini end */
+
 /* footer */
 
 .foot-container{
@@ -178,14 +190,14 @@ h4{
     width: 100%;
     height: 150px;
     vertical-align: middle;
-    padding: 40px 100px;
+    padding: 40px 0px;
     margin: 0 auto;
 
 }
 
 .flexfoot{
     display: flex;
-    align-items: center;
+    
     justify-content: space-between;
     
 }
@@ -194,13 +206,15 @@ h5{
     font-size: 16px;
     color: white;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 
-footer nav  ul li a {
+    a {
     color: white;
     padding-inline-end: 10px;
     text-decoration: none;
     font-size: 14px;
+    
 }
 
 .fa-brands{
