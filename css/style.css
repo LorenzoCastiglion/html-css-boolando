@@ -175,6 +175,9 @@ h4{
 
 .card:hover .hidden{
     display: inline-block;
+    transform: scale(0.5);
+    
+    
 }
 
 .card:hover .modelli{
